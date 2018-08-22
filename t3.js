@@ -1,4 +1,3 @@
-
 // Setup your Variables
 var cirlce = "O";
 var X = "X";
