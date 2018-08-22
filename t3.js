@@ -5,7 +5,7 @@ var squares= document.querySelectorAll(".tsquare");
 
 // Handle Restart game button
 var reset = document.getElementById("idStartButton");
-reset.addEventListener("click", clearBoard);
+reset.addEventListener("click",buttonClick);
 
 // Grab all the play spaces in the board
 for (var i =0; i < squares.length; i++)
@@ -23,6 +23,10 @@ function clearBoard(){
 document.getElementById("");
 
 
+for (var i =0; i < squares.length; i++)
+{
+    squares[i].addEventListener("click", buttonClick);
+}
 // Handle a play space being clicked
 function buttonClick() {
     console.log("box clicked");

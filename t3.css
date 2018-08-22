@@ -9,10 +9,14 @@ td {
     height: 100px;
     text-align: center;
     font-size: 65px;
+    background-color: yellow;
+
+
 }
 
 td:hover {
     border: 1px solid grey;
+    background-color: yellow;
 }
 
 .vertical {
@@ -28,3 +32,11 @@ button{
     background-color: transparent;
     color: black;
 }
+.horizontal
+{
+    background-color: yellow;
+}
+.vertical{
+    background-color: yellow;
+}
+
