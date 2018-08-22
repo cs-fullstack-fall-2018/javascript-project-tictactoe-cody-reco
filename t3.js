@@ -1,8 +1,7 @@
 // Setup your Variables
-var circle = "O";
-var X = "X";
 var squares= document.querySelectorAll(".tsquare");
-
+var turns=1;
+var cats=0
 // Handle Restart game button
 var reset = document.getElementById("idStartButton");
 reset.addEventListener("click",buttonClick);
@@ -23,21 +22,28 @@ function clearBoard(){
 document.getElementById("");
 
 
-for (var i =0; i < squares.length; i++)
+for (var x =0; x < squares.length; x++)
 {
-    squares[i].addEventListener("click", buttonClick);
+    squares[x].addEventListener("click", buttonClick);
 }
 // Handle a play space being clicked
 function buttonClick() {
-    console.log("box clicked");
-    this.innerText="X"
-
+    console.log(turns);
+    switches(this);
+    turns++;
+    cats++;
 }
 
 // Switch player turn
-
-
-
+function switches(item) {
+    console.log(turns%2);
+    if (turns % 2 === 1) {
+        item.innerText="X"
+    }
+    else if (turns%2===0){
+        item.innerText="O"
+    }
+    
 
 // Check for winner or CAT/tie
 function winner() {
