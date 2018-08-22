@@ -4,7 +4,8 @@ var X = "X";
 
 
 // Handle Restart game button
-var reset = document.getElementById("reset").reset();
+var reset = document.getElementById("idStartButton");
+reset.addEventListener("click",resetGame);
 
 // Grab all the play spaces in the board
 var td = document.querySelectorAll(".horizontal");
@@ -15,7 +16,7 @@ var td = document.querySelectorAll(".horizontal");
 
 
 // Setup click handlers for each play space on the board
-document.getElementById("")
+
 
 
 // Handle a play space being clicked
@@ -33,9 +34,13 @@ function winner() {
 alert("YOU WIN")
 }
 
-winner();
+// winner();
 
 function CAT() {
 alert("TIE")
 }
-CAT();
+// CAT();
+
+function resetGame() {
+    console.log("reset click");
+}
