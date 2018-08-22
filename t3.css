@@ -24,3 +24,7 @@ td:hover {
     border-top: 2px solid black;
     border-bottom: 2px solid black;
 }
+button{
+    background-color: transparent;
+    color: black;
+}

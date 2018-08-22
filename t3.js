@@ -1,4 +1,3 @@
-
 // Setup your Variables
 
 // Handle Restart game button
