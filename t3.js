@@ -15,7 +15,7 @@ for (var i =0; i < squares.length; i++)
 
 // Clear all the play spaces in the board
 function clearBoard(){
-    console.log("Game Reset")
+
 }
 
 
@@ -30,6 +30,7 @@ for (var i =0; i < squares.length; i++)
 // Handle a play space being clicked
 function buttonClick() {
     console.log("box clicked");
+    this.innerText="X"
 
 }
 
@@ -40,7 +41,7 @@ function buttonClick() {
 
 // Check for winner or CAT/tie
 function winner() {
-alert("YOU WIN")
+    alert("YOU WIN")
 }
 function CAT() {
 alert("TIE")
